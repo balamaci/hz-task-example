@@ -5,7 +5,7 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.fortsoft</groupId>
+    <groupId>ro.fortsoft</groupId>
     <artifactId>hz-task-test</artifactId>
     <version>1.0-SNAPSHOT</version>
 
@@ -18,19 +18,19 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.fortsoft</groupId>
+            <groupId>ro.fortsoft</groupId>
             <artifactId>hz-task-common</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
 
         <dependency>
-            <groupId>com.fortsoft</groupId>
+            <groupId>ro.fortsoft</groupId>
             <artifactId>hz-task-master</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
 
         <dependency>
-            <groupId>com.fortsoft</groupId>
+            <groupId>ro.fortsoft</groupId>
             <artifactId>hz-task-agent</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>

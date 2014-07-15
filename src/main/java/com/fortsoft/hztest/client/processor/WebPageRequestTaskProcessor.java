@@ -1,21 +1,21 @@
-package com.fortsoft.hztest.test.client.processor;
+package com.fortsoft.hztest.client.processor;
 
-import com.fortsoft.hztask.agent.processor.TaskProcessor;
-import com.fortsoft.hztask.common.task.Task;
-import com.fortsoft.hztest.test.task.GetWebPageTask;
+import com.fortsoft.hztest.task.GetWebPageTask;
 import org.apache.commons.io.IOUtils;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.config.RequestConfig;
 import org.apache.http.client.methods.HttpGet;
 import org.springframework.beans.factory.annotation.Autowired;
+import ro.fortsoft.hztask.agent.processor.TaskProcessor;
+import ro.fortsoft.hztask.common.task.Task;
 
 import java.io.IOException;
 
 /**
  * @author Serban Balamaci
  */
-public class WebPageRequestProcessor extends TaskProcessor<String> {
+public class WebPageRequestTaskProcessor extends TaskProcessor<String> {
 
     @Autowired
     private HttpClient httpClient;

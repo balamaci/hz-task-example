@@ -1,10 +1,10 @@
-package com.fortsoft.hztest.test.client.processor.factory;
+package com.fortsoft.hztest.client.processor.factory;
 
-import com.fortsoft.hztask.agent.processor.TaskProcessor;
-import com.fortsoft.hztask.agent.processor.TaskProcessorFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.ApplicationContext;
+import ro.fortsoft.hztask.agent.processor.TaskProcessor;
+import ro.fortsoft.hztask.agent.processor.TaskProcessorFactory;
 
 /**
  * @author Serban Balamaci

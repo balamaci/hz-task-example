@@ -1,6 +1,7 @@
-package com.fortsoft.hztest.test.task;
+package com.fortsoft.hztest.task;
 
-import com.fortsoft.hztask.common.task.Task;
+
+import ro.fortsoft.hztask.common.task.Task;
 
 /**
  * @author Serban Balamaci
