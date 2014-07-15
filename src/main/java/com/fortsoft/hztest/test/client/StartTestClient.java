@@ -2,7 +2,7 @@ package com.fortsoft.hztest.test.client;
 
 import com.fortsoft.hztask.agent.AgentConfig;
 import com.fortsoft.hztask.agent.ClusterAgent;
-import com.fortsoft.hztask.agent.processor.TaskProcessorFactory;
+import com.fortsoft.hztest.test.client.processor.factory.SpringBeanFactory;
 import com.fortsoft.hztest.test.task.GetWebPageTask;
 import com.hazelcast.config.Config;
 import com.hazelcast.config.InMemoryXmlConfig;
@@ -29,8 +29,7 @@ public class StartTestClient {
             String hzConfigXml = IOUtils.toString(context.getResource("hzAgent.xml").getInputStream());
 
             agentConfig.registerTaskProcessorFactory(GetWebPageTask.class,
-                    (TaskProcessorFactory) context.getBean("webPageRequestProcessorFactory"));
-
+                    new SpringBeanFactory(context, "webPageRequestProcessor"));
 
             Config hazelcastConfig = new InMemoryXmlConfig(hzConfigXml);
 
