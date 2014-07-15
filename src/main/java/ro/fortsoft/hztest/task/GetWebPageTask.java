@@ -1,4 +1,4 @@
-package com.fortsoft.hztest.task;
+package ro.fortsoft.hztest.task;
 
 
 import ro.fortsoft.hztask.common.task.Task;

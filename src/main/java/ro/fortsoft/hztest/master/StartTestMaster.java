@@ -1,6 +1,6 @@
-package com.fortsoft.hztest.master;
+package ro.fortsoft.hztest.master;
 
-import com.fortsoft.hztest.task.GetWebPageTask;
+import ro.fortsoft.hztest.task.GetWebPageTask;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import ro.fortsoft.hztask.master.ClusterMaster;

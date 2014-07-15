@@ -1,4 +1,4 @@
-package com.fortsoft.hztest.client.processor.factory;
+package ro.fortsoft.hztest.client.processor.factory;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

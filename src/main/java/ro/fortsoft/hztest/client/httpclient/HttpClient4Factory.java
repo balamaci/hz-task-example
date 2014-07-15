@@ -1,4 +1,4 @@
-package com.fortsoft.hztest.client.httpclient;
+package ro.fortsoft.hztest.client.httpclient;
 
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.config.RequestConfig;

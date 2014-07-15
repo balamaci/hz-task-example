@@ -1,4 +1,4 @@
-package com.fortsoft.hztest.master;
+package ro.fortsoft.hztest.master;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

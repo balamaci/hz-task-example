@@ -1,7 +1,7 @@
-package com.fortsoft.hztest.client;
+package ro.fortsoft.hztest.client;
 
-import com.fortsoft.hztest.client.processor.factory.SpringBeanFactory;
-import com.fortsoft.hztest.task.GetWebPageTask;
+import ro.fortsoft.hztest.client.processor.factory.SpringBeanFactory;
+import ro.fortsoft.hztest.task.GetWebPageTask;
 import com.hazelcast.config.Config;
 import com.hazelcast.config.InMemoryXmlConfig;
 import org.apache.commons.io.IOUtils;
@@ -22,18 +22,19 @@ public class StartTestClient {
 
     public static void main(String[] args) {
         try {
-            AgentConfig agentConfig = new AgentConfig();
 
             ApplicationContext context =
                     new ClassPathXmlApplicationContext(new String[]{ "applicationContext.xml"});
+
+
             String hzConfigXml = IOUtils.toString(context.getResource("hzAgent.xml").getInputStream());
-
-            agentConfig.registerTaskProcessorFactory(GetWebPageTask.class,
-                    new SpringBeanFactory(context, "webPageRequestTaskListener"));
-
             Config hazelcastConfig = new InMemoryXmlConfig(hzConfigXml);
 
+            AgentConfig agentConfig = new AgentConfig();
+
             ClusterAgent clusterAgent = new ClusterAgent(agentConfig, hazelcastConfig);
+            agentConfig.registerTaskProcessorFactory(GetWebPageTask.class,
+                    new SpringBeanFactory(context, "webPageRequestTaskListener"));
 
             log.info("Program has reached end");
         } catch (Throwable t) {

@@ -1,6 +1,6 @@
-package com.fortsoft.hztest.client.processor;
+package ro.fortsoft.hztest.client.processor;
 
-import com.fortsoft.hztest.task.GetWebPageTask;
+import ro.fortsoft.hztest.task.GetWebPageTask;
 import org.apache.commons.io.IOUtils;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
