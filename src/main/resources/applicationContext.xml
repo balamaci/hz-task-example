@@ -14,7 +14,9 @@
 
     <context:property-placeholder location="classpath:httpclient.properties"/>
 
-    <bean id="webPageRequestTaskListener" class="ro.fortsoft.hztest.client.processor.WebPageRequestTaskProcessor"/>
+    <bean id="webPageRequestTaskProcessor" class="ro.fortsoft.hztest.client.processor.WebPageRequestTaskProcessor"
+          scope="prototype"/>
+    <bean id="echoTaskProcessor" class="ro.fortsoft.hztest.client.processor.EchoTaskProcessor" scope="prototype"/>
 
     <bean id="httpClientFactory" class="ro.fortsoft.hztest.client.httpclient.HttpClient4Factory" />
     <bean id="defaultHttpClient" factory-bean="httpClientFactory" factory-method="createDefaultHttpClient"/>

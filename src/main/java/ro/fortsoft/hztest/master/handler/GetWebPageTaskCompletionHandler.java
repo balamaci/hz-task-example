@@ -1,16 +1,16 @@
-package ro.fortsoft.hztest.master;
+package ro.fortsoft.hztest.master.handler;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import ro.fortsoft.hztask.common.task.Task;
-import ro.fortsoft.hztask.master.listener.TaskCompletionListener;
+import ro.fortsoft.hztask.master.listener.TaskCompletionHandler;
 
 /**
  * @author Serban Balamaci
  */
-public class GetWebPageTaskCompletionListener extends TaskCompletionListener {
+public class GetWebPageTaskCompletionHandler extends TaskCompletionHandler {
 
-    private static final Logger log = LoggerFactory.getLogger(GetWebPageTaskCompletionListener.class);
+    private static final Logger log = LoggerFactory.getLogger(GetWebPageTaskCompletionHandler.class);
 
     @Override
     public void onSuccess(Task task, Object taskResult) {

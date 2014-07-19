@@ -23,13 +23,13 @@
 -->
     </network>
 
-    <executor-service name="finishedTasks">
+    <executor-service name="ro.fortsoft.finishedTasks">
         <pool-size>16</pool-size>
         <!--Queue capacity. 0 means Integer.MAX_VALUE.-->
         <queue-capacity>0</queue-capacity>
     </executor-service>
 
-    <executor-service name="coms">
+    <executor-service name="ro.fortsoft.coms">
         <pool-size>16</pool-size>
         <!--Queue capacity. 0 means Integer.MAX_VALUE.-->
         <queue-capacity>0</queue-capacity>
